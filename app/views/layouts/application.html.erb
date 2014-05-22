@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MoreInnovation</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="glass_panel_container">
+	<%= image_tag 'glass_panel_1920x1080.png', :class=> "glass_panel" %>
+		<div class="digital" id="digital_banner">
+			<div id="digital_banner_container">
+
+					<%= image_tag "More_logo_specialelite.png", :id=> 'digital_banner_logo' %>
+
+				
+					<div>		
+						<%= yield %>
+					</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
