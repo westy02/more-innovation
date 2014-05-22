@@ -81,5 +81,4 @@ test:
 production:
   <<: *default
   database: more-innovation_production
-  username: more-innovation
-  password: <%= ENV['MORE-INNOVATION_DATABASE_PASSWORD'] %>
+  
